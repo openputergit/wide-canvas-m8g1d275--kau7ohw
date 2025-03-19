@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Lohith's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #2563eb, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-2xl font-bold gradient-text">P. Lohith</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#resume" class="text-gray-600 hover:text-blue-600 transition">Resume</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                    <a href="#blogs" class="text-gray-600 hover:text-blue-600 transition">Blogs</a>
+                    <a href="#freelancing" class="text-gray-600 hover:text-blue-600 transition">Freelancing</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#resume" class="text-gray-600 hover:text-blue-600">Resume</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="#blogs" class="text-gray-600 hover:text-blue-600">Blogs</a>
+                <a href="#freelancing" class="text-gray-600 hover:text-blue-600">Freelancing</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">P. Lohith</span></h1>
+                    <p class="text-xl text-gray-600 mb-8">Data Analyst</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book a Meet</a>
+                        <a href="#resume" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">View Resume</a>
+                    </div>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="https://www.linkedin.com/in/p-lohith-990b76284/" target="_blank" class="text-2xl text-blue-600 hover:text-blue-700 transition">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/pallerilohith" target="_blank" class="text-2xl text-gray-700 hover:text-gray-900 transition">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50"></div>
+                        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=500&h=500&fit=crop" 
+                             alt="Profile" 
+                             class="relative w-64 h-64 rounded-full object-cover shadow-lg border-4 border-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Highlights -->
+    <section id="resume" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Resume Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Technical Skills -->
+                <div class="p-6 bg-gray-50 rounded-lg hover-scale shadow-sm">
+                    <i class="bi bi-code-square text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Technical Skills</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• SQL</li>
+                        <li>• Python</li>
+                        <li>• Data Analysis</li>
+                        <li>• Data Visualization</li>
+                        <li>• Data Cleaning</li>
+                        <li>• Microsoft Power BI</li>
+                    </ul>
+                </div>
+
+                <!-- Analytics Skills -->
+                <div class="p-6 bg-gray-50 rounded-lg hover-scale shadow-sm">
+                    <i class="bi bi-graph-up text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Analytics Skills</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Statistical Analysis</li>
+                        <li>• Data Mining</li>
+                        <li>• Dashboard Creation</li>
+                        <li>• Business Intelligence</li>
+                        <li>• Data Modeling</li>
+                        <li>• Predictive Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div id="contact" class="p-6 bg-gray-50 rounded-lg hover-scale shadow-sm">
+                    <i class="bi bi-person-lines-fill text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Contact Info</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li class="flex items-center">
+                            <i class="bi bi-telephone-fill mr-2"></i>
+                            <a href="tel:+919515467984">+91 9515467984</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-envelope-fill mr-2"></i>
+                            <a href="mailto:plohith027@gmail.com">plohith027@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-linkedin mr-2"></i>
+                            <a href="https://www.linkedin.com/in/p-lohith-990b76284/" target="_blank">LinkedIn Profile</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-github mr-2"></i>
+                            <a href="https://github.com/pallerilohith" target="_blank">GitHub Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden hover-scale shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" 
+                         alt="Data Analysis Project" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Data Analysis Portfolio</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive data analysis projects showcasing SQL, Python, and Power BI skills</p>
+                        <a href="#" class="text-blue-600 hover:underline">View Details →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden hover-scale shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=800" 
+                         alt="Business Intelligence Dashboard" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">BI Dashboard Solutions</h3>
+                        <p class="text-gray-600 mb-4">Interactive business intelligence dashboards and reports</p>
+                        <a href="#" class="text-blue-600 hover:underline">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>© 2024 P. Lohith's Portfolio. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/p-lohith-990b76284/" target="_blank" class="hover:text-blue-400 transition">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/pallerilohith" target="_blank" class="hover:text-blue-400 transition">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
